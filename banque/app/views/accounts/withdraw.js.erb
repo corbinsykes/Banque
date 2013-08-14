@@ -1,0 +1,4 @@
+$('#content').hide();
+$('body').append('<%=j render 'withdraw_form' %>');
+
+$('#withdraw-button').click(bankServices.accountWithdraw);

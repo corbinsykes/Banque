@@ -1,0 +1,11 @@
+<div id="withdraw-form">
+  <h1>Withdraw From Account</h1>
+  <input type="number" name="amount" placeholder="dollar amount" />
+  <button id="withdraw-button">Withdraw Funds</button>
+  <!-- dropdown menu for listing accounts -->
+  <select name="withdraw-account">
+    <% @accounts.each do |account| %>
+      <option value="<%= account.id %>"><%= account.name %></option>
+    <% end %>
+  </select>
+</div>

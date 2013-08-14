@@ -1,0 +1,4 @@
+$('#content').hide();
+$('body').append('<%=j render 'deposit_form' %>');
+
+$('#deposit-button').click(bankServices.accountDeposit);

@@ -1,0 +1,11 @@
+<div id="deposit-form">
+  <h1>Deposit To Account</h1>
+  <input type="number" name="amount" placeholder="dollar amount" />
+  <button id="deposit-button">Deposit Funds</button>
+  <!-- dropdown menu for listing accounts -->
+  <select name="deposit-account">
+    <% @accounts.each do |account| %>
+      <option value="<%= account.id %>"><%= account.name %></option>
+    <% end %>
+  </select>
+</div>
